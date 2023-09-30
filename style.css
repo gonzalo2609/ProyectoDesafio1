@@ -6,3 +6,12 @@
 body{
     background-color: orange;
 }
+.Izquierda{
+    text-align:justify;
+}
+#Seccion1{
+    text-align: center;
+}
+.Ilustracion{
+    width: 500px; display:flex;
+}
