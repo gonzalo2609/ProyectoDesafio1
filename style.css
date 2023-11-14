@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 body{
-    background-color:orange;
+
+background-image: linear-gradient(orange,yellow);
     font-family: sofia;
     font-size: 12px;
-    height: 100vh;
-
+  
 }
+
+                   /*  HEADER  */
+
+
 .MenuPrincipal{
 
     position: fixed;
@@ -22,8 +26,8 @@ width: 100%;
 
 .MenuPrincipal li {
     
-    list-style-type: none;
-display:inline-block;
+   
+display: inline-block;
 padding: 10px;
 
 
@@ -44,6 +48,10 @@ padding: 10px;
 }
 
 #Header{
+
+
+    display:flex;
+
   
 }
 
@@ -51,8 +59,11 @@ padding: 10px;
     text-align: center;
     font-size:80px;
     padding: 30px;
-
+    position: relative;
+    right: 20px;
+    bottom: 35px;
    
+
  }
  .NombrePrincipal:hover{
     text-decoration: underline;
@@ -60,113 +71,287 @@ padding: 10px;
 
  }
 
+
  .Logo{
     border: 2px solid red;
     border-radius:50%;
+position: relative;
+bottom: 50px;
+left: 115%;
 
 
+ }
+      /*  TERMINACION DEL HEADER  */
+
+              /* SECCION 1  PUBLICIDAD  */
+
+              #PantallaDividida{
+
+                display: flex;
+                width: 100%;
+                height: 400px;
+                
+            }
+            
+            #PantallaDividida div.Izquierda{
+                width: 70%;
+            
+            
+            }
+            
+            .Izquierda h1{
+                font-size: 40px;
+                text-align: center;
+                
+                margin: 0;
+                position: relative;
+            right: 30px;
+            
+                }
+            
+               .Izquierda p{
+            
+                
+                text-align: center;
+            
+            margin: 70px;
+              
+                height: 200px;
+                width: 500px;
+                font-size: 40px;
+                position: absolute;
+                left: 125px;
+            border-radius: 8px;
+            border: 3px solid red;
+            
+                }
+            
+            
+            .Izquierda:hover h1{
+                -webkit-text-fill-color: white;
+                text-decoration: underline;
+            
+            
+            }
+            
+            #PantallaDividida div.Derecha{
+                width: 30%;
+            
+            
+            }
+            #PantallaDividida div.Derecha img{
+                height: 100%;
+                width: 100%;
+            
+            }
+
+            img.Presentacion{
+                position: relative;
+                width: 35%;
+                height: 35%;
+            border-radius: 10px;
+            border: 2px solid red;
+            right: 15px;
+            
+            }
+
+              /* FINALIZA SECCION 1 PUBLICIDAD  */
+
+
+              .BotonInformacion {
+
+                text-align: center;
+                
+                }
+                
+                
+                .BotonInformacion button{
+                
+                font-size: 20px;
+                border-radius:30px;
+                margin:30px;
+                padding: 10px;
+                border: 2px solid black;
+                
+                
+                }
+                
+                
+                .BotonInformacion button:hover{
+                    background-color: red;
+                    color: white;
+                
+                }
+
+
+/*  INICIA SECCION 2 CONTENEDOR  */
+
+ .contenedor{
+
+display: grid;
+grid-template-columns: repeat(2,1fr);
+width: 100%;
+grid-row-gap: 60px;
+grid-column-gap:30px;
+justify-items: center;
+
+margin-top: 10%;
+
+ }
+
+ .caja1{
+ background-color: red;
+   text-align:center;
+border: 2px solid;
+border-radius: 30px;
+
+ }
+
+ .caja2{
+  background-color: red;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 30px;
+ 
+
+ }
+
+
+ .caja3{
+   
+    text-align:center;
+    border: 2px solid;
+    border-radius: 30px;
+
+ }
+
+
+ .caja4{
+
+    text-align:center;
+    border: 2px solid;
+    border-radius: 30px;
+
+
+ }
+
+
+ .caja5{
+  
+    text-align:center;
+    border: 2px solid;
+border-radius: 30px;
+
+
+
+ }
+
+
+ .caja6{
     
+    text-align:center;
+    border: 2px solid;
+border-radius: 30px;
+
+
+
+ }
+
+
+ .caja7{
+
+    text-align:center;
+    border: 2px solid;
+border-radius: 30px;
+
+
+ }
+
+
+ .caja8{
+   
+    text-align:center;
+    border: 2px solid;
+    border-radius: 30px;
+
 
  }
 
 #Seccion2{
-    text-align: center;
-    font-size: 20px;
-}
-.Ilustracion{
-    width: 500px; 
-    display:flex;
-    border: 2px solid red;
-}
+ 
 
-#Header{
-    justijfy-content: space-between;
-    align-items:center;
-display:flex;
-}
-
-img.Presentacion{
-    width: 35%;
-    height: 35%;
-border-radius: 10px;
 
 }
+
+#Seccion2 .Titulo{
+   
+    font-size: 25px;
+    text-transform: uppercase;
+ height: 100px;
+ width: 250px;
+
+
+position:relative;
+left: 40%;
+text-align: center;
+margin-top: 30px;
+}
+
+.Descripcion{
+
+font-size: 25px;
+
+}
+
+.Precio{
+
+    font-size: 25px;
+    font-weight: 1000;
+    padding: 25px;
+   
+}
+
+
 img.Ilustracion{
-   width: 25%;
-height: 25%;
+   width:300px ;
+height: 350px;
+border-radius: 20px;
+
+}
+
+.NuestrosPlatos{
+
+
+    
+    height: 500px;
+    width: 400px;
+   margin:20px ;
+
+}
+
+
+button{
+
+padding: 10px;
 border-radius: 10px;
-border: 1px solid white;
-}
+border: 1px solid;
+margin: 20px;}
 
-article.caja{
-    display:block;
-    border: 1px solid black;
-}
-#PantallaDividida{
+/*  FIN DE LA SECCION 2  */ 
 
-    display: flex;
-    width: 100%;
-    height: 400px;
-    
-}
 
-#PantallaDividida div.Izquierda{
-    width: 70%;
+/*   FOOTER   */
 
+.Footer{
+
+    margin: 30px;
 
 }
 
-.Izquierda h1{
-    font-size: 40px;
-    text-align: center;
-    
-    margin: 0;
-    position: relative;
-
-    }
-
-   .Izquierda p{
-
-    
-    text-align: center;
-
-margin: 70px;
-  
-    height: 200px;
-    width: 500px;
-    font-size: 40px;
-    position: absolute;
-    left: 12%;
-border-radius: 8px;
-border: 3px solid red;
-    
-  
-    
 
 
-    }
+.TituloFinal{
 
-
-.Izquierda:hover h1{
-    -webkit-text-fill-color: white;
-    text-decoration: underline;
-
-
-}
-
-#PantallaDividida div.Derecha{
-    width: 30%;
-}
-#PantallaDividida div.Derecha img{
-    height: 100%;
-    width: 100%;
-
-}
-.BotonInformacion button{
-display: flex;
-
-border-radius: 8px;
-padding: 5px;
 
 text-align: center;
 
